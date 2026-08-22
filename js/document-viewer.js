@@ -20,6 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
             type: "html",
             path: "assets/previews/excel-visualisation.html"
         },
+        "script": {
+            title: "SQL table result",
+            type: "image",
+            path: "assets/documents/script.sql"
+        }
         "sql-result": {
             title: "SQL table result",
             type: "image",
