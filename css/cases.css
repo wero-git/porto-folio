@@ -226,6 +226,27 @@
 .outcome-metric span {color: var(--text-soft); font-size: 0.82rem;}
 
 /* Deliverables */
+.viewer-code {
+    display: block;
+    padding: 0;
+    overflow: auto;
+}
+
+.viewer-code pre {
+    width: 100%;
+    min-height: calc(100vh - 170px);
+    margin: 0;
+    padding: 35px;
+    overflow: auto;
+    background: #17211D;
+    color: #E5FFF4;
+    font-family: Consolas, Monaco, "Courier New", monospace;
+    font-size: 0.88rem;
+    line-height: 1.7;
+    white-space: pre;
+    tab-size: 4;
+}
+
 .deliverables-subtitle {
     margin: -3px 0 16px;
     color: var(--text);
