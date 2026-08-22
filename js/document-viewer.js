@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         "script": {
             title: "SQL table result",
-            type: "image",
+            type: "code",
             path: "assets/documents/script.sql"
-        }
+        },
         "sql-result": {
             title: "SQL table result",
             type: "image",
