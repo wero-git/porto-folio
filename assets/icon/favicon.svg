@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title description">
+  <title id="title">Winston Engamba portfolio</title>
+  <desc id="description">WE monogram in the portfolio mint green identity.</desc>
+  <rect width="64" height="64" rx="18" fill="#17211D"/>
+  <path d="M10 19h9l4.2 23 5.2-16h7.2l5.2 16L45 19h9l-8.1 30H37l-5-15.5L27 49h-8.9L10 19Z" fill="#A2FADA"/>
+  <circle cx="52" cy="12" r="5" fill="#65C9A6"/>
+</svg>
