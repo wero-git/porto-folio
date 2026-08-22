@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Claims data visualization</title>
+<style>
+:root{--mint:#A2FADA;--mint-dark:#3E9D7C;--ink:#17211D;--soft:#F0F6F3;--line:#DCE8E2;--muted:#52605A}
+*{box-sizing:border-box}body{margin:0;padding:28px;background:#fff;color:var(--ink);font-family:Inter,"Segoe UI",sans-serif;user-select:none}
+h1{font-size:1.55rem;margin:0 0 8px}p{color:var(--muted);margin:0 0 28px}
+  .sheet{margin-bottom:38px}.sheet h2{font-size:1rem;color:var(--mint-dark);margin:0 0 12px;text-transform:uppercase;letter-spacing:.08em}
+  .table-wrap{overflow:auto;border:1px solid var(--line);border-radius:18px;box-shadow:0 10px 30px rgba(23,33,29,.06)}
+  table{border-collapse:collapse;min-width:100%;font-size:.78rem}td,th{padding:10px 12px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);white-space:nowrap;text-align:left}tr:last-child 
+  td{border-bottom:0}td:last-child,th:last-child{border-right:0}tr:nth-child(even) 
+  td{background:var(--soft)}tr:hover td{background:#E5FFF4}.empty{color:#9aa7a1} @media print{body{display:none}}
+</style>
+</head>
+  <body>
+    <h1>Claims data visualization</h1>
+    <p>Read-only spreadsheet preview</p>
+    <section class="sheet">
+      <h2>Dynamic Table</h2>
+      <div class="table-wrap">
+        <table><tbody><tr><td class="empty">—</td>
+          <td class="empty">—</td><td class="empty">—</td>
+          <td class="empty">—</td><td class="empty">—</td>
+          <td class="empty">—</td><td class="empty">—</td>
+          <td class="empty">—</td><td class="empty">—</td>
+          <td class="empty">—</td><td class="empty">—</td>
+          <td class="empty">—</td></tr><tr><td class="empty">—</td>
+            <td class="empty">—</td><td class="empty">—</td>
+            <td class="empty">—</td><td class="empty">—</td>
+            <td class="empty">—</td><td class="empty">—</td>
+            <td class="empty">—</td><td class="empty">—</td>
+            <td class="empty">—</td><td class="empty">—</td>
+            <td class="empty">—</td></tr>
+          <tr><td>Summe von total_refunded</td>
+            <td>Spaltenbeschriftungen</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td></tr>
+          <tr><td>issue_source</td>
+            <td>80</td><td>250</td><td>300</td>
+            <td>500</td><td>540</td><td>630</td>
+            <td>780</td><td>800</td><td>1000</td>
+            <td>1200</td><td>Gesamtergebnis</td>
+          </tr><tr><td>Customer</td><td>0.68</td>
+            <td class="empty">—</td><td class="empty">—</td>
+            <td>3.4999999999999996</td><td class="empty">—</td>
+            <td class="empty">—</td><td>6.630000000000001</td>
+            <td>6.800000000000001</td><td>6.999999999999999</td>
+            <td class="empty">—</td><td>24.61</td></tr>
+          <tr><td>Received</td><td>0.68</td>
+            <td class="empty">—</td><td class="empty">—</td>
+            <td>3.4999999999999996</td><td class="empty">—</td>
+            <td class="empty">—</td><td>6.630000000000001</td>
+            <td>6.800000000000001</td><td>6.999999999999999</td>
+            <td class="empty">—</td><td>24.61</td></tr>
+          <tr><td>Production</td><td class="empty">—</td>
+            <td class="empty">—</td><td class="empty">—</td>
+            <td class="empty">—</td><td class="empty">—</td>
+            <td class="empty">—</td><td class="empty">—</td>
+            <td class="empty">—</td><td class="empty">—</td>
+            <td>24</td><td>24</td></tr><tr><td>Received</td>
+              <td class="empty">—</td><td class="empty">—</td>
+              <td class="empty">—</td><td class="empty">—</td>
+              
+              <td class="empty">—</td><td class="empty">—</td>
+              <td class="empty">—</td><td class="empty">—</td>
+              <td class="empty">—</td><td>24</td><td>24</td></tr>
+          <tr><td>Unknown</td><td class="empty">—</td><td>0</td>
+            <td>0</td><td class="empty">—</td><td>0</td><td>0</td>
+            <td class="empty">—</td><td>0</td><td class="empty">—</td>
+            <td class="empty">—</td><td>0</td></tr>
+          <tr><td>Pending_Return</td>
+              <td class="empty">—</td>
+              <td>0</td>
+              <td>0</td>
+              <td class="empty">—</td>
+              <td>0</td><td>0</td><td class="empty">—</td><td>0</td>
+              <td class="empty">—</td>
+              <td class="empty">—</td><td>0</td></tr>
+          <tr><td>Gesamtergebnis</td>
+            <td>0.68</td><td>0</td>
+            <td>0</td><td>3.4999999999999996</td>
+            <td>0</td><td>0</td><td>6.630000000000001</td>
+            <td>6.800000000000001</td><td>6.999999999999999</td>
+            <td>24</td><td>48.61</td></tr>
+        </tbody>
+        </table>
+      </div>
+    </section>
+    
+    <section class="sheet">
+      <h2>Daten</h2>
+      <div class="table-wrap"><table>
+      <tbody><tr><td class="empty">—</td>
+        <td class="empty">—</td>
+        <td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td>
+        <td class="empty">—</td></tr><tr><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td>
+          <td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td></tr><tr><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td>
+            <td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td></tr><tr>
+              <td class="empty">—</td><td>CASES STUDIED</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td>
+          <td class="empty">—</td><td class="empty">—</td></tr><tr><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td>
+            <td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td></tr><tr><td class="empty">—</td><td class="empty">—</td>
+              <td class="empty">—</td><td class="empty">—</td>
+          <td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td></tr><tr><td class="empty">—</td>
+            <td>claim_id</td>
+            <td>customer_name</td>
+            <td>product_name</td>
+            <td>unit_price</td>
+            <td>issue_source</td>
+            <td>product_condition</td>
+            <td>Refunded_Rate</td>
+            <td>total_refunded</td>
+            <td>process_statut</td></tr>
+        <tr><td class="empty">—</td><td>1</td>
+            <td>Alice Johnson</td><td>HP PC AMD RYZEN 2025</td><td>1200</td><td>Customer</td><td>Very_Damaged</td><td>0.7</td><td>840</td><td>Received</td></tr><tr><td class="empty">—</td><td>2</td>
+            <td>Bob Smith</td><td>Google Pixel 10 Phone</td><td>800</td><td>Production</td><td>Damaged</td><td>1</td><td>800</td><td>Received</td></tr><tr><td class="empty">—</td><td>3</td>
+            <td>Charlie Davis</td><td>Lenovo Tab M12</td><td>500</td><td>Customer</td><td>Damaged</td><td>0.85</td><td>425</td><td>Received</td></tr><tr><td class="empty">—</td><td>4</td>
+            <td>David Wilson</td><td>Google Pixel 8 Phone</td><td>300</td><td>Unknown</td><td>Not_Received</td><td>0</td><td>0</td><td>Pending_Return</td></tr><tr><td class="empty">—</td><td>5</td>
+            <td>Adam Robens</td><td>Samsung Galaxy 21</td><td>1000</td><td>Customer</td><td>Good</td><td>1</td><td>1000</td><td>Received</td></tr><tr><td class="empty">—</td><td>6</td>
+            <td>John Adams</td><td>Google Pixel 10 Phone</td><td>800</td><td>Unknown</td><td>Not_Received</td><td>0</td><td>0</td><td>Pending_Return</td></tr><tr><td class="empty">—</td><td>7</td>
+            <td>Hans Mustermann</td><td>Iphone 13</td><td>1200</td><td>Production</td><td>Damaged</td><td>1</td><td>1200</td><td>Received</td></tr><tr><td class="empty">—</td><td>8</td>
+            <td>Emillie Johnson</td><td>Iphone headphone</td><td>250</td><td>Customer</td><td>Damaged</td><td>0.85</td><td>212.5</td><td>Received</td></tr><tr><td class="empty">—</td><td>9</td>
+            <td>Jordan Molan</td><td>Google I-Watch</td><td>630</td><td>Customer</td><td>Very_Damaged</td><td>0.7</td><td>441</td><td>Received</td></tr><tr><td class="empty">—</td><td>10</td>
+            <td>Travor James</td><td>LG Smart TV</td><td>780</td><td>Customer</td><td>Very_Damaged</td><td>0.7</td><td>546</td><td>Received</td></tr><tr><td class="empty">—</td><td>11</td>
+            <td>Dona Beck</td><td>Samsung fridge</td><td>540</td><td>Unknown</td><td>Not_Received</td><td>0</td><td>0</td><td>Pending_Return</td></tr>
+        <tr><td class="empty">—</td><td>12</td><td>Alan Northman</td><td>Music Max Sound Player</td><td>80</td><td>Customer</td><td>Good</td><td>1</td><td>80</td><td>Received</td></tr><tr><td class="empty">—</td>
+          <td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td>
+          <td class="empty">—</td><td class="empty">—</td></tr><tr><td class="empty">—</td>
+            <td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td><td class="empty">—</td>
+            <td class="empty">—</td><td class="empty">—</td></tr><tr><td class="empty">—</td>
+              <td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td>
+              <td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td>
+              <td class="empty">—</td></tr><tr><td class="empty">—</td>
+                <td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td>
+                <td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td>
+                <td class="empty">—</td></tr><tr><td class="empty">—</td>
+                  <td class="empty">—</td><td class="empty">—</td><td class="empty">—</td>
+          <td class="empty">—</td><td class="empty">—</td><td class="empty">—</td>
+                  <td class="empty">—</td><td class="empty">—</td>
+                  <td class="empty">—</td></tr>
+        <tr><td class="empty">—</td><td class="empty">—</td>
+          <td class="empty">—</td><td class="empty">—</td>
+          <td class="empty">—</td><td class="empty">—</td>
+          <td class="empty">—</td><td class="empty">—</td>
+          <td class="empty">—</td><td class="empty">—</td></tr>
+        <tr><td class="empty">—</td><td class="empty">—</td>
+          <td class="empty">—</td><td class="empty">—</td>
+          <td class="empty">—</td><td class="empty">—</td>
+          
+          <td class="empty">—</td><td>Process status</td>
+          <td class="empty">—</td><td class="empty">—</td></tr>
+        <tr><td class="empty">—</td><td class="empty">—</td>
+          <td class="empty">—</td><td class="empty">—</td>
+          <td class="empty">—</td><td class="empty">—</td>
+          
+          <td class="empty">—</td><td>Received</td><td>9</td>
+          <td class="empty">—</td></tr><tr><td class="empty">—</td>
+          <td class="empty">—</td><td class="empty">—</td>
+            <td class="empty">—</td><td class="empty">—</td>
+            <td class="empty">—</td><td class="empty">—</td>
+          
+          <td>Pending_Return</td><td>3</td><td class="empty">—</td></tr>
+          <tr><td class="empty">—</td><td class="empty">—</td>
+            <td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td></tr><tr>
+          <td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td>
+          <td class="empty">—</td></tr><tr><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td>
+            <td class="empty">—</td><td class="empty">—</td></tr><tr><td class="empty">—</td>
+            <td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td></tr><tr><td class="empty">—</td>
+              <td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td>Issues sources</td><td class="empty">—</td><td class="empty">—</td></tr><tr><td class="empty">—</td><td class="empty">—</td>
+                <td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td>Production</td><td>2</td><td class="empty">—</td></tr><tr><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td class="empty">—</td>
+                  <td class="empty">—</td><td class="empty">—</td><td class="empty">—</td><td>Customer</td><td>7</td><td class="empty">—</td></tr>
+      </tbody>
+      </table>
+      </div>
+    </section>
+    
+    <script>document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("dragstart",e=>e.preventDefault());document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&["s","p","u"].includes(e.key.toLowerCase()))e.preventDefault()});</script></body></html>
