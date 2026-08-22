@@ -1,0 +1,654 @@
+/* =========================================================
+   WINSTON ENGAMBA — PORTFOLIO
+   PROFILE.CSS
+   Profile page
+========================================================= */
+
+
+/* =========================================================
+   01. HERO
+========================================================= */
+
+.profile-hero {
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding-top: 140px;
+    padding-bottom: 100px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.profile-hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    top: -180px;
+    right: -120px;
+
+    border-radius: 50%;
+
+    background:
+        var(--primary);
+
+    opacity: 0.32;
+
+    filter: blur(2px);
+
+    pointer-events: none;
+
+}
+
+
+.profile-hero-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.25fr
+        0.75fr;
+
+    align-items: center;
+
+    gap: 80px;
+
+}
+
+
+.profile-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+.profile-eyebrow {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+
+    color: var(--primary-deep);
+
+    font-size: 0.8rem;
+    font-weight: 900;
+
+    letter-spacing: 0.15em;
+
+    text-transform: uppercase;
+
+}
+
+
+.profile-eyebrow::before {
+
+    content: "";
+
+    width: 35px;
+    height: 2px;
+
+    background:
+        var(--primary-deep);
+
+}
+
+
+.profile-title {
+
+    max-width: 850px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.profile-title .highlight {
+
+    position: relative;
+
+    display: inline-block;
+
+    z-index: 0;
+
+}
+
+
+.profile-title .highlight::after {
+
+    content: "";
+
+    position: absolute;
+
+    z-index: -1;
+
+    left: -5px;
+    right: -5px;
+    bottom: 4px;
+
+    height: 25%;
+
+    background:
+        var(--primary);
+
+}
+
+
+.profile-introduction {
+
+    max-width: 650px;
+
+    margin-bottom: 35px;
+
+    font-size: 1.1rem;
+
+}
+
+
+.profile-actions {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+}
+
+
+/* =========================================================
+   02. PROFILE IMAGE
+========================================================= */
+
+.profile-photo-wrapper {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+.profile-photo-frame {
+
+    position: relative;
+
+    width: min(
+        100%,
+        390px
+    );
+
+    aspect-ratio: 4 / 5;
+
+}
+
+
+.profile-photo-frame::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 18px -18px -18px 18px;
+
+    border-radius:
+        var(--radius-large);
+
+    background:
+        var(--primary);
+
+}
+
+
+.profile-photo {
+
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius:
+        var(--radius-large);
+
+    border: 1px solid var(--border);
+
+    box-shadow:
+        var(--shadow-medium);
+
+}
+
+
+/* =========================================================
+   03. PROFILE OVERVIEW
+========================================================= */
+
+.profile-overview {
+    background: var(--surface-soft);
+}
+
+.profile-overview-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+    align-items: center;
+    gap: clamp(45px, 7vw, 90px);
+}
+
+.profile-overview-content {
+    max-width: none;
+    margin-bottom: 0;
+}
+
+.profile-overview-content .section-description {
+    max-width: 760px;
+    text-align: justify;
+}
+
+.profile-overview-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-overview-frame {
+    position: relative;
+    width: min(100%, 360px);
+    aspect-ratio: 4 / 5;
+}
+
+.profile-overview-frame::before {
+    content: "";
+    position: absolute;
+    inset: 16px 16px -16px -16px;
+    border-radius: var(--radius-large);
+    background: var(--primary);
+}
+
+.profile-overview-photo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-medium);
+}
+
+
+/* =========================================================
+   04. EDUCATION TIMELINE
+========================================================= */
+
+.education-timeline {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(180px, 1fr)
+        );
+
+    gap: 25px;
+
+    margin-top: 60px;
+
+}
+
+
+.education-timeline::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 31px;
+    left: 8%;
+    right: 8%;
+
+    height: 2px;
+
+    background:
+        var(--border);
+
+}
+
+
+.education-item {
+
+    position: relative;
+
+    z-index: 1;
+
+    text-align: center;
+
+}
+
+
+.education-node {
+
+    width: 62px;
+    height: 62px;
+
+    margin: 0 auto 22px;
+
+    display: grid;
+    place-items: center;
+
+    border: 6px solid
+        var(--background);
+
+    border-radius: 50%;
+
+    background:
+        var(--primary);
+
+    box-shadow:
+        0 0 0 1px var(--border);
+
+}
+
+
+.education-year {
+
+    margin-bottom: 8px;
+
+    color:
+        var(--primary-deep);
+
+    font-size: 0.8rem;
+    font-weight: 800;
+
+}
+
+
+.education-degree {
+
+    margin-bottom: 8px;
+
+    font-size: 1rem;
+
+}
+
+
+.education-school {
+
+    margin: 0;
+
+    font-size: 0.88rem;
+
+}
+
+
+/* =========================================================
+   05. SKILLS
+========================================================= */
+
+.skills-grid {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+}
+
+
+.skill-bubble {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 13px 17px;
+
+    border: 1px solid var(--border);
+
+    border-radius:
+        var(--radius-pill);
+
+    background:
+        var(--surface);
+
+    box-shadow:
+        var(--shadow-soft);
+
+    font-size: 0.88rem;
+    font-weight: 750;
+
+    transition:
+        transform var(--transition),
+        background var(--transition),
+        border-color var(--transition);
+
+}
+
+
+.skill-bubble::before {
+
+    content: "";
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background:
+        var(--primary-dark);
+
+}
+
+
+.skill-bubble:hover {
+
+    transform:
+        translateY(-4px);
+
+    border-color:
+        var(--primary-dark);
+
+    background:
+        var(--primary-light);
+
+}
+
+
+/* =========================================================
+   06. EXPERIENCE CTA BANNER
+========================================================= */
+
+.profile-cta {
+
+    position: relative;
+
+    padding: 55px;
+
+    border-radius:
+        var(--radius-large);
+
+    overflow: hidden;
+
+    background:
+        var(--text);
+
+    color: white;
+
+}
+
+
+.profile-cta::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    right: -80px;
+    top: -100px;
+
+    border-radius: 50%;
+
+    background:
+        var(--primary);
+
+}
+
+
+.profile-cta-content {
+
+    position: relative;
+
+    z-index: 1;
+
+    max-width: 700px;
+
+}
+
+
+.profile-cta h2 {
+
+    margin-bottom: 15px;
+
+    color: white;
+
+}
+
+
+.profile-cta p {color: rgba(255, 255, 255, 0.7);}
+
+/* =========================================================
+   07. LANGUAGES
+========================================================= */
+.languages-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.language-item {margin-bottom: 28px;}
+.language-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 9px;
+}
+
+.language-name {font-weight: 800;}
+.language-level {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
+
+.language-track {
+    height: 7px;
+    overflow: hidden;
+    border-radius: var(--radius-pill);
+    background: var(--border);
+}
+
+.language-progress {
+    width: 0;
+    height: 100%;
+    border-radius: inherit;
+    background: var(--primary-dark);
+    transition: width 1.1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* =========================================================
+   08. INTERESTS
+========================================================= */
+.interests-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.interest-card {
+    padding: 16px 20px;
+    border: 1px solid var(--border);
+    border-radius:var(--radius-medium);
+    background: var(--surface);
+    transition: transform var(--transition), background var(--transition);
+}
+.interest-card:hover {
+    transform: translateY(-4px);
+    background: var(--primary-light);
+}
+
+/* =========================================================
+   09. CONTACT
+========================================================= */
+.contact-banner {
+    padding: 70px 50px;
+    text-align: center;
+    border-radius: var(--radius-large);
+    background: var(--primary);
+}
+.contact-banner h2 {margin-bottom: 15px;}
+.contact-banner p {max-width: 600px; margin: 0 auto 28px;}
+.contact-actions {
+    justify-content: center;
+    align-items: stretch;
+}
+.contact-actions .button {
+    min-width: 126px;
+    text-align: center;
+}
+
+
+/* =========================================================
+   10. PROFILE RESPONSIVE
+========================================================= */
+@media (max-width: 850px) {
+    .profile-hero-grid {grid-template-columns: 1fr; gap: 55px;}
+    .profile-photo-wrapper {order: -1;}
+    .profile-photo-frame {width: min(75vw, 330px);}
+    .profile-overview-grid {grid-template-columns: 1fr;}
+    .profile-overview-visual {order: -1;}
+    .profile-overview-frame {width: min(72vw, 320px);}
+    .education-timeline {
+        grid-template-columns: 1fr;
+        gap: 30px;
+
+    }
+    .education-timeline::before {
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 2px;
+        height: auto;
+    }
+    .languages-grid {grid-template-columns: 1fr; gap: 50px;}
+
+}
+
+
+@media (max-width: 600px) {
+    .profile-title {font-size: clamp(2.8rem, 15vw, 4.5rem);}
+    .profile-cta {padding: 40px 25px;}
+    .contact-banner {padding: 50px 25px;}
+}

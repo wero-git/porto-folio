@@ -1,0 +1,479 @@
+/* =========================================================
+   WINSTON ENGAMBA — PORTFOLIO
+   PROJECTS.CSS
+   Projects & categories page
+========================================================= */
+
+
+/* =========================================================
+   01. PAGE HERO
+========================================================= */
+
+.projects-hero {
+
+    padding-top: 190px;
+    padding-bottom: 55px;
+
+}
+
+
+.projects-hero-content {width: 100%; max-width: none;}
+
+
+.projects-hero-title {
+
+    margin-bottom: 25px;
+
+}
+
+
+.projects-hero-description {
+
+    width: 100%;
+    max-width: none;
+
+    font-size: 1.1rem;
+
+}
+
+.projects-categories-section {padding-top: 45px;}
+
+
+/* =========================================================
+   02. CATEGORY NAVIGATION
+========================================================= */
+
+.project-categories {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-top: 60px;
+
+}
+
+
+/* =========================================================
+   03. CATEGORY BUBBLE
+========================================================= */
+
+.category-bubble {
+
+    position: relative;
+
+    min-height: 270px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    padding: 35px;
+
+    overflow: hidden;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-large);
+
+    background:
+        var(--surface);
+
+    cursor: pointer;
+
+    box-shadow:
+        var(--shadow-soft);
+
+    transition:
+        transform var(--transition),
+        background var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+
+}
+
+
+.category-bubble::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    right: -50px;
+    bottom: -60px;
+
+    border-radius: 50%;
+
+    background:
+        var(--primary);
+
+    opacity: 0.45;
+
+    transition:
+        transform var(--transition);
+
+}
+
+
+.category-bubble:hover,
+.category-bubble.active {
+
+    transform:
+        translateY(-6px);
+
+    border-color:
+        var(--primary-dark);
+
+    background:
+        var(--primary-light);
+
+    box-shadow:
+        var(--shadow-medium);
+
+}
+
+
+.category-bubble:hover::before,
+.category-bubble.active::before {
+
+    transform:
+        scale(1.4);
+
+}
+
+
+.category-number {
+
+    position: relative;
+    z-index: 1;
+
+    color:
+        var(--primary-deep);
+
+    font-size: 0.75rem;
+    font-weight: 900;
+
+    letter-spacing: 0.12em;
+
+}
+
+
+.category-content {
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+
+.category-title {
+
+    margin-bottom: 12px;
+
+}
+
+
+.category-description {
+
+    max-width: 500px;
+
+    margin: 0;
+
+    font-size: 0.92rem;
+
+}
+
+
+.category-arrow {
+
+    position: relative;
+
+    z-index: 1;
+
+    align-self: flex-end;
+
+    width: 42px;
+    height: 42px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    background:
+        var(--text);
+
+    color:
+        white;
+
+    transition:
+        transform var(--transition);
+
+}
+
+
+.category-bubble:hover
+.category-arrow {
+
+    transform:
+        rotate(45deg);
+
+}
+
+
+/* =========================================================
+   04. PROJECT LIST
+========================================================= */
+
+.project-list {
+
+    margin-top: 100px;
+
+}
+
+
+.project-list-header {
+
+    display: flex;
+
+    align-items: end;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-bottom: 45px;
+
+}
+
+
+.project-list-title {
+
+    margin-bottom: 0;
+
+}
+
+
+.project-reset {
+
+    border: 0;
+
+    background: none;
+
+    color:
+        var(--text-muted);
+
+    font-size: 0.8rem;
+    font-weight: 800;
+
+    cursor: pointer;
+
+}
+
+
+.project-reset:hover {
+
+    color:
+        var(--primary-deep);
+
+}
+
+
+/* =========================================================
+   05. PROJECT GRID
+========================================================= */
+
+.projects-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+
+}
+
+
+/* =========================================================
+   06. PROJECT CARD
+========================================================= */
+.project-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 360px;
+    padding: 32px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-large);
+    background: var(--surface);
+    box-shadow: var(--shadow-soft);
+    transition:
+        opacity var(--transition),
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+
+}
+
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary-dark);
+    box-shadow: var(--shadow-medium);
+}
+.project-card.project-hidden {display: none;}
+.project-card.project-dimmed {opacity: 0.45;}
+.project-category-label {
+    display: inline-flex;
+    align-self: flex-start;
+    padding: 7px 11px;
+    margin-bottom: 25px;
+    border-radius: var(--radius-pill);
+    background: var(--primary-light);
+    color: var(--primary-deep);
+    font-size: 0.72rem;
+    font-weight: 900;
+}
+.project-number {
+    margin-bottom: 8px;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+.project-title {
+    margin-bottom: 15px;
+}
+.project-description {
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+}
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: auto;
+    margin-bottom: 25px;
+}
+.project-tags span {
+    padding: 6px 10px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+    background: var(--surface-soft);
+    color: var(--text-soft);
+    font-size: 0.72rem;
+    font-weight: 750;
+    cursor: pointer;
+}
+.project-tags span:hover,
+.project-tags span.selected {
+    background: var(--primary);
+    color: var(--text);
+}
+
+
+/* =========================================================
+   07. PROJECT LINK
+========================================================= */
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    align-self: flex-start;
+    color: var(--text);
+    font-size: 0.82rem;
+    font-weight: 900;
+}
+.project-link::after {
+    content: "↗";
+    transition: transform var(--transition-fast);
+}
+.project-link:hover::after {
+    transform: translate(3px, -3px);
+}
+
+
+/* =========================================================
+   08. PROJECT DETAILS
+========================================================= */
+.project-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+.project-expanded
+.project-details {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid var(--border);
+}
+.project-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.project-detail-item h4 {
+    margin-bottom: 5px;
+    color: var(--primary-deep);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+.project-detail-item p {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+/* =========================================================
+   09. PROJECT CTA
+========================================================= */
+.projects-cta {
+    margin-top: 100px;
+    padding: 60px;
+    text-align: center;
+    border-radius: var(--radius-large);
+    background: var(--primary);
+}
+.projects-cta h2 {margin-bottom: 15px;}
+.projects-cta p {
+    max-width: 650px;
+    margin: 0 auto 28px;
+}
+
+/* =========================================================
+   10. RESPONSIVE
+========================================================= */
+@media (max-width: 850px) {
+    .project-categories,
+    .projects-grid {grid-template-columns: 1fr;}
+    .project-list-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .projects-hero {padding-top: 145px;}
+    .category-bubble {
+        min-height: 240px;
+        padding: 27px;
+    }
+
+    .project-card {
+      min-height: 330px;
+      padding: 25px 20px;
+    }
+    .project-detail-grid {grid-template-columns: 1fr;}
+    .projects-cta {padding: 45px 25px;}
+}

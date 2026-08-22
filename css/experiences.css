@@ -1,0 +1,307 @@
+/* =========================================================
+   WINSTON ENGAMBA — PORTFOLIO
+   EXPERIENCES.CSS
+   Professional experience page
+========================================================= */
+
+
+/* =========================================================
+   01. PAGE HERO
+========================================================= */
+
+.experience-hero {
+    padding-top: 190px;
+    padding-bottom: 90px;
+}
+.experience-hero-content {
+    width: 100%;
+    max-width: none;
+}
+.experience-hero-title {margin-bottom: 25px;}
+.experience-hero-description {
+    width: 100%;
+    max-width: none;
+    font-size: 1.1rem;
+}
+
+
+/* =========================================================
+   02. EXPERIENCE SUMMARY
+========================================================= */
+.experience-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 55px;
+}
+
+.summary-card {
+    padding: 28px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-medium);
+    background: var(--surface);
+}
+
+
+.summary-value {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--primary-deep);
+    font-size: 2.4rem;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+}
+
+.summary-label {
+    color: var(--text-soft);
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* =========================================================
+   03. EXPERIENCE FILTERS
+========================================================= */
+
+.experience-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 60px;
+}
+
+
+.experience-filter {
+    padding: 10px 17px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+    background: var(--surface);
+    color: var(--text-soft);
+    font-size: 0.82rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition:
+        background var(--transition),
+        color var(--transition),
+        border-color var(--transition);
+}
+
+
+.experience-filter:hover,
+.experience-filter.active {
+    border-color: var(--primary-dark);
+    background: var(--primary);
+    color: var(--text);
+}
+
+
+/* =========================================================
+   04. TIMELINE
+========================================================= */
+
+.experience-timeline {
+    position: relative;
+    max-width: 1050px;
+    margin-inline: auto;
+}
+
+.experience-timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 30px;
+    width: 2px;
+    background: var(--border);
+}
+
+.experience-item {
+    position: relative;
+    padding-left: 90px;
+    margin-bottom: 70px;
+}
+
+.experience-node {
+    position: absolute;
+    top: 5px;
+    left: 12px;
+    width: 38px;
+    height: 38px;
+    border: 8px solid var(--background);
+    border-radius: 50%;
+    background: var(--primary);
+    box-shadow: 0 0 0 1px var(--border-strong);
+}
+
+.experience-card {
+    padding: 35px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-soft);
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition),
+        opacity var(--transition);
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(101, 201, 166, 0.55);
+    box-shadow: var(--shadow-medium);
+}
+
+.experience-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.experience-period {
+    color: var(--primary-deep);
+    font-size: 0.8rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+}
+
+.experience-location {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
+.experience-position {margin-bottom: 7px;}
+.experience-company {
+    margin-bottom: 25px;
+    color: var(--text-soft);
+    font-weight: 750;
+}
+.experience-description {margin-bottom: 25px;}
+
+/* =========================================================
+   05. RESPONSIBILITIES
+========================================================= */
+
+.experience-responsibilities {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 25px;
+    margin-bottom: 28px;
+}
+
+
+.experience-responsibilities li {
+    color: var(--text-soft);
+    font-size: 0.9rem;
+}
+
+
+.experience-responsibilities li::marker {color: var(--primary-dark);}
+
+/* =========================================================
+   06. TOOLS
+========================================================= */
+
+.experience-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.experience-tools span {
+    padding: 7px 11px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+    background: var(--surface-soft);
+    color: var(--text-soft);
+    font-size: 0.75rem;
+    font-weight: 750;
+    cursor: pointer;
+    transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+
+.experience-tools span:hover,
+.experience-tools span.selected {
+    background: var(--primary);
+    color: var(--text);
+}
+
+
+/* =========================================================
+   07. EXPERIENCE DETAILS
+========================================================= */
+.experience-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+.experience-card.experience-expanded
+.experience-details {margin-top: 25px;}
+
+
+/* =========================================================
+   08. FILTER STATES
+========================================================= */
+.experience-item.filtered-out {display: none;}
+
+
+/* =========================================================
+   09. EXPERIENCE CTA
+========================================================= */
+.experience-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 45px;
+    border-radius: var(--radius-large);
+    background: var(--text);
+    color: white;
+}
+
+.experience-cta h2 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.experience-cta p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* =========================================================
+   10. RESPONSIVE
+========================================================= */
+@media (max-width: 800px) {
+    .experience-summary {grid-template-columns: 1fr;}
+    .experience-responsibilities {grid-template-columns: 1fr;}
+    .experience-cta {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 35px 25px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .experience-hero {padding-top: 145px;}
+    .experience-timeline::before {left: 18px;}
+    .experience-item {
+        padding-left: 55px;
+        margin-bottom: 45px;
+    }
+    .experience-node {
+        left: 0;
+        width: 36px;
+        height: 36px;
+    }
+    .experience-card {
+        padding: 25px 20px;
+        border-radius: var(--radius-medium);
+   }
+
+}
