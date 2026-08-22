@@ -1,0 +1,354 @@
+/* =====================
+   Cases CSS – Claims Study
+   (includes only styles not in main.css/projects.css)
+===================== */
+
+/* ---- Hero Section ---- */
+.case-hero {
+    padding-top: 190px;
+    padding-bottom: 90px;
+}
+.case-hero-content {
+    max-width: 850px;
+}
+.case-hero-title {
+    font-size: clamp(3.5rem, 6vw, 6rem);
+    line-height: 1.05;
+    margin: 18px 0 25px;
+}
+.case-hero-description {
+    max-width: 700px;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* ---- Alternate Section Background ---- */
+.case-section-alt {
+    background: var(--surface-soft);
+}
+
+/* ---- Two-column Context ---- */
+.case-two-column {
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    gap: 80px;
+}
+.case-text p {
+    margin-bottom: 1.8rem;
+}
+.case-facts {
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+.case-facts > div {
+    padding: 1.2rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.case-facts span {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* ---- Challenge List ---- */
+.challenge-list {
+    margin-left: 10%;
+}
+.challenge-row {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+.challenge-row:last-child {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.challenge-row span {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* ---- Approach Steps ---- */
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+.approach-grid article {
+    padding: 2rem 2rem 3rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.approach-grid article:nth-child(odd) {
+    border-right: 1px solid rgba(0,0,0,0.1);
+    padding-right: 3rem;
+}
+.approach-grid article > span {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+/* ---- Process Flow Diagram ---- */
+.claim-flow {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+.flow-stage {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+}
+.flow-stage span {
+    display: block;
+    font-size: 0.75rem;
+    opacity: 0.6;
+    margin-bottom: 0.5rem;
+}
+.flow-stage strong {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+.flow-stage small {
+    display: block;
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+.flow-line {
+    width: 3rem;
+    height: 1px;
+    background: rgba(0,0,0,0.1);
+    margin: 0 0.5rem;
+}
+
+/* ---- Tools Grid ---- */
+.tools-list {
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+.tool-row {
+    display: grid;
+    grid-template-columns: 12rem 1fr;
+    gap: 1rem;
+    align-items: start;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.tool-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.tool-purpose {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+.tool-row p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* ---- Outcomes ---- */
+.outcome-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 4rem;
+}
+.outcome-main p {
+    margin: 0 0 1.5rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+.outcome-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.outcome-metrics div {
+    border-top: 3px solid #A2FADA;
+    padding-top: 1rem;
+    text-align: center;
+}
+.outcome-metrics strong {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.03em;
+}
+.outcome-metrics span {
+    font-size: 0.75rem;
+    line-height: 1.4;
+}
+
+/* ---- Closing Section ---- */
+.case-closing {
+    padding: 6rem 0;
+}
+.case-closing h2 {
+    font-size: clamp(3rem, 5vw, 5rem);
+    line-height: 1.1;
+    margin: 2rem 0;
+}
+.case-closing p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 40rem;
+    margin-left: 0;
+}
+
+/* ---- Back Link ---- */
+.case-back {
+    padding: 2rem 0 4rem;
+}
+.case-back a {
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* =======================================================
+   TOOLS
+======================================================= */
+
+.tools-section{
+    padding-top:8rem;
+}
+
+.tools-heading{
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    gap:5rem;
+    align-items:center;
+    margin-top:2rem;
+}
+
+.accent-dot{
+    color:var(--primary);
+}
+
+.tools-table{
+    margin-top:5rem;
+    border-top:1px solid var(--border-color);
+}
+
+.tool-row{
+
+    display:grid;
+    grid-template-columns:110px 220px 280px 1fr;
+
+    align-items:center;
+
+    gap:2rem;
+
+    padding:2.8rem 0;
+
+    border-bottom:1px solid var(--border-color);
+
+    transition:.35s;
+}
+
+.tool-row:hover{
+
+    transform:translateX(8px);
+
+}
+
+.tool-icon{
+
+    width:96px;
+    height:96px;
+
+    background:#F2FFFA;
+
+    border-radius:24px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.tool-icon img{
+
+    width:54px;
+}
+
+.tool-row h3{
+
+    font-size:2rem;
+    font-weight:700;
+}
+
+.tool-category{
+
+    text-transform:uppercase;
+
+    letter-spacing:.12em;
+
+    font-weight:600;
+
+    color:var(--text-light);
+
+    font-size:.95rem;
+}
+
+.tool-row p{
+
+    max-width:430px;
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:991px){
+
+.tools-heading{
+
+grid-template-columns:1fr;
+
+gap:2rem;
+
+}
+
+.tool-row{
+
+grid-template-columns:80px 1fr;
+
+}
+
+.tool-category{
+
+grid-column:2;
+
+}
+
+.tool-row p{
+
+grid-column:2;
+
+}
+
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 600px) {
+    .case-hero { padding-top: 145px; }
+}
+@media (max-width: 900px) {
+    .case-two-column { grid-template-columns: 1fr; }
+    .approach-grid { grid-template-columns: 1fr; }
+    .approach-grid article:nth-child(odd),
+    .approach-grid article:nth-child(even) {
+        border-right: none;
+        padding: 2rem 0;
+    }
+    .claim-flow { flex-direction: column; }
+    .flow-line { width: 1px; height: 2rem; margin: 0.5rem 0; }
+    .outcome-grid { grid-template-columns: 1fr; }
+    .case-closing { padding: 4rem 0; }
+}

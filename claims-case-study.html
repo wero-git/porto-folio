@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Claims management process optimization case study using BPMN 2.0, Excel and SQL.">
+    <meta name="author" content="Winston Engamba">
+    <title>Winston Engamba | Claims Case Study</title>
+
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <link rel="alternate icon" type="image/png" href="assets/icons/favicon-32.png">
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+    <meta name="theme-color" content="#A2FADA">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cases.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="case-page" data-navigation-parent="projects.html">
+<header class="site-header">
+    <div class="header-container">
+        <a href="index.html" class="site-logo" aria-label="Winston Engamba - Home">
+            <span class="logo-mark">WE</span>
+            <span>Winston Engamba</span>
+        </a>
+        <nav class="main-navigation" aria-label="Main navigation">
+            <a href="index.html">Profile</a>
+            <a href="experiences.html">Experience</a>
+            <a href="projects.html" class="active">Projects</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Reuse this hero and summary structure for future case-study pages. -->
+    <section class="case-hero">
+        <div class="container">
+            <div class="case-hero-content reveal">
+                <span class="section-label">Process Optimization</span>
+                <h1 class="case-hero-title">Claims Case Study</h1>
+                <p class="case-hero-description">
+                    Analyzing and modeling a customer claims process from initial
+                    registration through assessment, decision and resolution.
+                </p>
+            </div>
+
+            <div class="case-summary" aria-label="Case study summary">
+                <div class="case-summary-card reveal">
+                    <span class="case-summary-value" data-case-summary="challenges">0</span>
+                    <span class="case-summary-label">Bottlenecks</span>
+                </div>
+                <div class="case-summary-card reveal">
+                    <span class="case-summary-value" data-case-summary="solutions">0</span>
+                    <span class="case-summary-label">Optimized solutions</span>
+                </div>
+                <div class="case-summary-card reveal">
+                    <span class="case-summary-value" data-case-summary="deliverables">0</span>
+                    <span class="case-summary-label">Deliverables</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section case-context-section">
+        <div class="container">
+            <div class="case-section-heading reveal">
+                <span class="section-label">Context</span>
+                <h2 class="section-title">Understanding the claims process</h2>
+            </div>
+
+            <div class="case-two-column">
+                <div class="case-text reveal">
+                    <p>
+                        A customer claim flows through multiple stages—from initial
+                        registration and data capture, through analysis and decision-making,
+                        to final resolution. Each stage relies on accurate information being
+                        collected and transferred.
+                    </p>
+                    <p>
+                        This project makes that workflow explicit by mapping every activity,
+                        responsibility and decision point. The goal is to expose the full
+                        sequence, identify bottlenecks and reveal opportunities to streamline
+                        the process.
+                    </p>
+                </div>
+                <div class="case-facts reveal">
+                    <div class="case-fact">
+                        <span>Project type</span>
+                        <strong>Academic Case Study</strong>
+                    </div>
+                    <div class="case-fact">
+                        <span>Category</span>
+                        <strong>Process Optimization</strong>
+                    </div>
+                    <div class="case-fact">
+                        <span>Business process</span>
+                        <strong>Claims Management</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section case-section-alt">
+        <div class="container">
+            <div class="case-section-heading reveal">
+                <span class="section-label">Process</span>
+                <h2 class="section-title">The claim-handling flow</h2>
+                <p class="section-description">The workflow is structured into four main stages.</p>
+            </div>
+
+            <div class="process-timeline">
+                <article class="process-stage reveal">
+                    <div class="process-node">01</div>
+                    <span class="process-stage-label">Beginning</span>
+                    <h3>Registration</h3>
+                    <p>Claim received and basic details recorded.</p>
+                </article>
+                <article class="process-stage reveal">
+                    <div class="process-node">02</div>
+                    <span class="process-stage-label">Analysis</span>
+                    <h3>Assessment</h3>
+                    <p>Documents gathered and claim validity assessed.</p>
+                </article>
+                <article class="process-stage reveal">
+                    <div class="process-node">03</div>
+                    <span class="process-stage-label">Decision</span>
+                    <h3>Decision</h3>
+                    <p>Approval or necessary corrective actions determined.</p>
+                </article>
+                <article class="process-stage reveal">
+                    <div class="process-node">04</div>
+                    <span class="process-stage-label">Completion</span>
+                    <h3>Resolution</h3>
+                    <p>Claim completed and customer notified.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="case-section-heading reveal">
+                <span class="section-label">Challenge</span>
+                <h2 class="section-title">Where does the process lose efficiency?</h2>
+                <p class="section-description">
+                    Three areas required a clearer structure before improvements could be designed.
+                </p>
+            </div>
+
+            <div class="challenge-grid">
+                <article class="challenge-card reveal" data-case-challenge>
+                    <span class="case-card-number">01</span>
+                    <div class="case-card-icon" aria-hidden="true">PV</div>
+                    <h3>Process visibility</h3>
+                    <p>Clarify activities, actors and decision points by visualizing the complete workflow.</p>
+                </article>
+                <article class="challenge-card reveal" data-case-challenge>
+                    <span class="case-card-number">02</span>
+                    <div class="case-card-icon" aria-hidden="true">IF</div>
+                    <h3>Information flow</h3>
+                    <p>Understand how claim data moves from registration to decision and closure.</p>
+                </article>
+                <article class="challenge-card reveal" data-case-challenge>
+                    <span class="case-card-number">03</span>
+                    <div class="case-card-icon" aria-hidden="true">PE</div>
+                    <h3>Processing efficiency</h3>
+                    <p>Identify waiting, redundant approvals and handovers that slow down handling.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section case-section-alt">
+        <div class="container">
+            <div class="case-section-heading reveal">
+                <span class="section-label">Approach</span>
+                <h2 class="section-title">From process analysis to modeling</h2>
+            </div>
+
+            <div class="approach-grid">
+                <article class="approach-card reveal" data-case-solution>
+                    <span class="case-card-number">01 / Understanding</span>
+                    <h3>Process analysis</h3>
+                    <p>Document activities, roles and decision points from the existing procedures.</p>
+                </article>
+                <article class="approach-card reveal" data-case-solution>
+                    <span class="case-card-number">02 / Visualization</span>
+                    <h3>BPMN modeling</h3>
+                    <p>Build a formal BPMN 2.0 diagram highlighting sequences, events and logic.</p>
+                </article>
+                <article class="approach-card reveal" data-case-solution>
+                    <span class="case-card-number">03 / Organization</span>
+                    <h3>Data structuring</h3>
+                    <p>Organize claim records in Excel and a relational data structure for analysis.</p>
+                </article>
+                <article class="approach-card reveal" data-case-solution>
+                    <span class="case-card-number">04 / Improvement</span>
+                    <h3>Improvement analysis</h3>
+                    <p>Locate bottlenecks and non-value steps, then propose streamlining and automation.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="case-section-heading reveal">
+                <span class="section-label">Tools</span>
+                <h2 class="section-title">Tools supporting the analysis</h2>
+                <p class="section-description">
+                    A compact toolkit connecting process modeling, operational data and analysis.
+                </p>
+            </div>
+
+            <div class="tools-grid">
+                <article class="tool-card reveal">
+                    <div class="tool-mark" aria-hidden="true">B</div>
+                    <span class="tool-category">Process modeling</span>
+                    <h3>BPMN 2.0</h3>
+                    <p>Modeled the complete workflow, including activities, gateways and decisions.</p>
+                </article>
+                <article class="tool-card reveal">
+                    <div class="tool-mark" aria-hidden="true">X</div>
+                    <span class="tool-category">Data structuring</span>
+                    <h3>Excel</h3>
+                    <p>Structured claim records for filtering, calculation and process evaluation.</p>
+                </article>
+                <article class="tool-card reveal">
+                    <div class="tool-mark" aria-hidden="true">S</div>
+                    <span class="tool-category">Data management</span>
+                    <h3>SQL</h3>
+                    <p>Designed a relational structure for consistent claims storage and retrieval.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section case-section-alt">
+        <div class="container">
+            <div class="case-section-heading reveal">
+                <span class="section-label">Outcome</span>
+                <h2 class="section-title">Connecting process and data</h2>
+            </div>
+
+            <div class="outcome-content reveal">
+                <div class="outcome-copy">
+                    <p>
+                        The process model provides a clear and structured view of claim handling,
+                        making all steps, decisions and data explicit. It reveals where time is
+                        spent and how cases move across responsibilities.
+                    </p>
+                    <p>
+                        Combining BPMN modeling with structured data makes the workflow visible
+                        and measurable. Each activity can be connected to the information it uses
+                        and produces, creating a foundation for automation and continuous improvement.
+                    </p>
+                </div>
+
+                <div class="outcome-metrics">
+                    <div class="outcome-metric">
+                        <strong>~35%</strong>
+                        <span>Potential reduction in processing time</span>
+                    </div>
+                    <div class="outcome-metric">
+                        <strong>1.2</strong>
+                        <span>Average employees per task</span>
+                    </div>
+                    <div class="outcome-metric">
+                        <strong>↑</strong>
+                        <span>Interdepartmental communication</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section case-deliverables-section" id="deliverables">
+        <div class="container">
+            <div class="case-section-heading reveal">
+                <span class="section-label">Deliverables</span>
+                <h2 class="section-title">Project resources</h2>
+                <p class="deliverables-subtitle">More about the project and the resolution</p>
+                <p class="section-description">
+                    Open each resource in a dedicated preview page. The source files stay outside
+                    the direct navigation flow.
+                </p>
+            </div>
+
+            <div class="deliverables-grid">
+                <a class="deliverable-card reveal" data-case-deliverable href="document-viewer.html?doc=overview" target="_blank" rel="noopener noreferrer">
+                    <span class="deliverable-type">PDF</span>
+                    <h3>Detailed problem description</h3>
+                    <span class="deliverable-action">Open preview ↗</span>
+                </a>
+                <a class="deliverable-card reveal" data-case-deliverable href="document-viewer.html?doc=initial-process" target="_blank" rel="noopener noreferrer">
+                    <span class="deliverable-type">BPMN</span>
+                    <h3>Initial process model</h3>
+                    <span class="deliverable-action">Open preview ↗</span>
+                </a>
+                <a class="deliverable-card reveal" data-case-deliverable href="document-viewer.html?doc=optimized-process" target="_blank" rel="noopener noreferrer">
+                    <span class="deliverable-type">BPMN</span>
+                    <h3>Optimized process model</h3>
+                    <span class="deliverable-action">Open preview ↗</span>
+                </a>
+                <a class="deliverable-card reveal" data-case-deliverable href="document-viewer.html?doc=excel" target="_blank" rel="noopener noreferrer">
+                    <span class="deliverable-type">Excel</span>
+                    <h3>Claims data visualization</h3>
+                    <span class="deliverable-action">Open preview ↗</span>
+                </a>
+                <a class="deliverable-card reveal" data-case-deliverable href="document-viewer.html?doc=sql-result" target="_blank" rel="noopener noreferrer">
+                    <span class="deliverable-type">Image</span>
+                    <h3>SQL table result</h3>
+                    <span class="deliverable-action">Open preview ↗</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="case-back">
+        <div class="container">
+            <a href="projects.html" class="button button-secondary">← Back to projects</a>
+        </div>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-container">
+        <p class="footer-copy">© <span data-current-year>2026</span> Winston Engamba. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="index.html">Profile</a>
+            <a href="experiences.html">Experience</a>
+            <a href="projects.html">Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+<script src="js/animations.js" defer></script>
+<script src="js/cases.js" defer></script>
+</body>
+</html>
