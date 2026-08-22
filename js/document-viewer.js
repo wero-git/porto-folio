@@ -20,11 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
             type: "html",
             path: "assets/previews/excel-visualisation.html"
         },
-        "script": {
-            title: "SQL table result",
+        "sql-code": {
+            title: "Claims database SQL code",
             type: "code",
             path: "assets/documents/script.sql"
-        },
+},
         "sql-result": {
             title: "SQL table result",
             type: "image",
@@ -54,7 +54,32 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     title.textContent = resource.title;
-    document.title = `${resource.title} | Winston Engamba`;
+    document.title = `${resource.title} | Winston Engamba`;if (resource.type === "code") {
+    frame.classList.add("viewer-code");
+
+    const pre = document.createElement("pre");
+    const code = document.createElement("code");
+
+    code.textContent = "Loading SQL code…";
+    pre.appendChild(code);
+    frame.appendChild(pre);
+
+    fetch(resource.path)
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error("SQL file unavailable");
+            }
+
+            return response.text();
+        })
+        .then((content) => {
+            code.textContent = content;
+        })
+        .catch(() => {
+            code.textContent = "Unable to display the SQL code.";
+        });
+
+} else if (resource.type === "image") {
 
     if (resource.type === "image") {
         const image = document.createElement("img");
@@ -79,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         frame.appendChild(iframe);
-    }
+    } }
 
     document.addEventListener("contextmenu", (event) => event.preventDefault());
     document.addEventListener("dragstart", (event) => event.preventDefault());
