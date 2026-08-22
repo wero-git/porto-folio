@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "initial-process": {
             title: "Initial process model",
             type: "drawio",
-            path: "assets/documents/process intitial.drawio"
+            path: "assets/documents/process initial.drawio"
         },
         "optimized-process": {
             title: "Optimized process model",
