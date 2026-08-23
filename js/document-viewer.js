@@ -9,7 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
             type: "pdf",
             path: "assets/documents/process-overview.pdf"
         },
-
+        report: {
+    title: "End-to-end claim case - Full project report",
+    type: "pdf",
+    path: "assets/documents/end-to-end-claim-case-report.pdf"
+},       
         "initial-process": {
             title: "Initial process model",
             type: "drawio",
