@@ -40,9 +40,9 @@
         <div class="container">
             <div class="case-hero-content reveal">
                 <span class="section-label">Process Optimization</span>
-                <h1 class="case-hero-title">Claims Case Study</h1>
+                <h1 class="case-hero-title">End-to-End Claim Case Management</h1>
                 <p class="case-hero-description">
-                    Analyzing and modeling a customer claims process from initial
+                    Analyzing and modeling a customer claims designed process from initial
                     registration through assessment, decision and resolution.
                 </p>
             </div>
@@ -73,23 +73,34 @@
 
             <div class="case-two-column">
                 <div class="case-text reveal">
-                    <p>
-                        A customer claim flows through multiple stages—from initial
-                        registration and data capture, through analysis and decision-making,
-                        to final resolution. Each stage relies on accurate information being
-                        collected and transferred.
-                    </p>
-                    <p>
-                        This project makes that workflow explicit by mapping every activity,
-                        responsibility and decision point. The goal is to expose the full
-                        sequence, identify bottlenecks and reveal opportunities to streamline
-                        the process.
-                    </p>
-                </div>
+    <p>
+        In this academic case study, a company receives complaints from customers
+        about damaged products. Each claim starts with a complaint from the customer
+        and ends with a refund. In between, it passes in sequence through three
+        departments: Customer Service examines the complaint, Technicians inspect the
+        returned product, and Accounting calculates and pays the refund.
+    </p>
+    <p>
+        In the initial process, almost everything is done by hand. Customer Service
+        screens each complaint for defamation, which can lead to legal action, and
+        asks the customer to return the product within 30 days. Technicians then
+        analyze the product's condition, record their conclusion in Excel, restock the
+        product manually and send a refund request to Accounting. In the standard
+        case, this adds up to 10 manual steps and three handovers between departments.
+    </p>
+    <p>
+        The project had three objectives: reduce the handling time of each claim and
+        the number of people needed to process it, identify where the delays and
+        damage originate, and propose a redesigned process. To get there, I modeled
+        the existing process in BPMN 2.0, built a claims database in Excel and a
+        sorting logic in MySQL that identifies the origin of the damage, and then
+        redesigned the process around that data.
+    </p>
+</div>
                 <div class="case-facts reveal">
                     <div class="case-fact">
                         <span>Project type</span>
-                        <strong>Academic Case Study</strong>
+                        <strong>Modeled and designed Project based on an academic Case Study</strong>
                     </div>
                     <div class="case-fact">
                         <span>Category</span>
@@ -98,6 +109,10 @@
                     <div class="case-fact">
                         <span>Business process</span>
                         <strong>Claims Management</strong>
+                    </div>
+                    <div class="case-fact">
+                        <span>Objective</span>
+                        <strong>Reduce the wasted time and the necessary steps</strong>
                     </div>
                 </div>
             </div>
@@ -200,7 +215,8 @@
                 <article class="approach-card reveal" data-case-solution>
                     <span class="case-card-number">04 / Improvement</span>
                     <h3>Improvement analysis</h3>
-                    <p>Locate bottlenecks and non-value steps, then propose streamlining and automation.</p>
+                    <p>Locate bottlenecks and non-value steps, then propose 
+                        streamlining and automation.</p>
                 </article>
             </div>
         </div>
@@ -221,19 +237,27 @@
                     <div class="tool-mark" aria-hidden="true">B</div>
                     <span class="tool-category">Process modeling</span>
                     <h3>BPMN 2.0</h3>
-                    <p>Modeled the complete workflow, including activities, gateways and decisions.</p>
+                    <p>Modeled the claims process twice, before and after 
+                       optimization, with lanes for Customer, 
+                       Customer Service, Technicians and Accounting. 
+                       Manual steps in the standard case: 10 before, 2 after.</p>
                 </article>
                 <article class="tool-card reveal">
                     <div class="tool-mark" aria-hidden="true">X</div>
-                    <span class="tool-category">Data structuring</span>
+                    <span class="tool-category">Claims Database</span>
                     <h3>Excel</h3>
-                    <p>Structured claim records for filtering, calculation and process evaluation.</p>
+                    <p>One row per claim, with [columns, e.g. product, damage type, 
+                       refund type, refund amount]. Used to filter 
+                       claims and calculate the refund amount.</p>
                 </article>
                 <article class="tool-card reveal">
                     <div class="tool-mark" aria-hidden="true">S</div>
-                    <span class="tool-category">Data management</span>
+                    <span class="tool-category">Damage classification</span>
                     <h3>SQL</h3>
-                    <p>Designed a relational structure for consistent claims storage and retrieval.</p>
+                    <p>A sorting logic (CASE WHEN) that classifies each returned 
+                       product by the origin of its damage, e.g. 
+                       production fault or customer fault. The result 
+                       decides between a full and a partial refund.</p>
                 </article>
             </div>
         </div>
@@ -249,29 +273,38 @@
             <div class="outcome-content reveal">
                 <div class="outcome-copy">
                     <p>
-                        The process model provides a clear and structured view of claim handling,
-                        making all steps, decisions and data explicit. It reveals where time is
-                        spent and how cases move across responsibilities.
+                        I modeled the existing claims process in BPMN 2.0 and found that, 
+                        in the standard case, 
+                        a claim passes through three departments (Customer Service, 
+                        Technicians, Accounting) 
+                        and 10 manual steps. I then built a MySQL sorting logic 
+                        to identify the origin of the damage 
+                        on returned products, stored the claim data in an Excel database, 
+                        and redesigned the process around it.
                     </p>
                     <p>
-                        Combining BPMN modeling with structured data makes the workflow visible
-                        and measurable. Each activity can be connected to the information it uses
-                        and produces, creating a foundation for automation and continuous improvement.
+                        In the redesigned model, only the product inspection 
+                        and the refund percentage still require a person. 
+                        Return label, stock update, refund payment 
+                        and confirmation email are automated. 
+                        Customer Service only intervenes 
+                        in the claim reception and the exceptional defamation case.
                     </p>
                 </div>
 
                 <div class="outcome-metrics">
                     <div class="outcome-metric">
-                        <strong>~35%</strong>
-                        <span>Potential reduction in processing time</span>
+                        <strong>10 → 2</strong>
+                        <span>Manual steps in the standard case (-80%)</span>
                     </div>
                     <div class="outcome-metric">
-                        <strong>1.2</strong>
-                        <span>Average employees per task</span>
+                        <strong>3</strong>
+                        <span>Databases created</span>
                     </div>
                     <div class="outcome-metric">
-                        <strong>↑</strong>
-                        <span>Interdepartmental communication</span>
+                        <strong>0 → 5</strong>
+                        <span>Automated steps (return label, stock update, refund, confirmation, 
+                            defamation filter)</span>
                     </div>
                 </div>
             </div>
